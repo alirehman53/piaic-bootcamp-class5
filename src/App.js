@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Parent from "./Parent.js";
@@ -12,7 +12,7 @@ function App(props) {
 }
 */
 function App() {
-    let value = 81;
+    let value = useState(48);
     return ( <
         ValueContext.Provider value = { value } >
         <

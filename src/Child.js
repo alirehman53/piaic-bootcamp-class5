@@ -6,7 +6,10 @@ function Child(props) {
     let value = useContext(ValueContext)
     return ( <
         div >
-        Child { value }
+        Child { value[0] } <
+        button onClick = {
+            () => { value[1](++value[0]) }
+        } > Update Value < /button>
 
         <
         /div>
